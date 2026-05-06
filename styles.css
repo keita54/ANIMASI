@@ -1,0 +1,93 @@
+body{
+    margin:0;
+    padding:0; 
+    overflow: hidden;
+}
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vw;
+    overflow: hidden;
+    background: linear-gradient(rgb(93, 176, 253), rgb(144, 205, 255));
+}
+.container div{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: linear-gradient( rgb(255, 205, 242), rgb(237, 161, 205));
+    border-radius: 0px 20px 0px 20px;
+    box-shadow: 5px;
+}
+.container div:nth-child(1){
+    left: 5%;
+    animation: animasi 20s linear infinite -0.7s;
+}
+.container div:nth-child(2){
+    left: 22%;
+    animation: animasi 35s linear infinite -3.1s;
+}
+.container div:nth-child(3){
+    left: 12%;
+    animation: animasi 25s linear infinite -4.5s;
+}
+.container div:nth-child(4){
+    left: 45%;
+    animation: animasi 42s linear infinite -4s;
+}
+.container div:nth-child(5){
+    left: 33%;
+    animation: animasi 30s linear infinite -4.1s;
+}
+.container div:nth-child(6){
+    left: 60%;
+    animation: animasi 38s linear infinite -4.3s;
+}
+.container div:nth-child(7){
+    left: 85%;
+    animation: animasi 22s linear infinite -0.7s;
+}
+.container div:nth-child(8){
+    left: 72%;
+    animation: animasi 45s linear infinite -3.2s;
+}
+.container div:nth-child(9){
+    left: 52%;
+    animation: animasi 28s linear infinite -3s;
+}
+.container div:nth-child(10){
+    left: 95%;
+    animation: animasi 33s linear infinite -4s;
+}
+.container div:nth-child(11){
+    left: 18%;
+    animation: animasi 29s linear infinite -1s;
+}
+.container div:nth-child(12){
+    left: 38%;
+    animation: animasi 37s linear infinite -2.3s;
+}
+.container div:nth-child(13){
+    left: 68%;
+    animation: animasi 41s linear infinite -2.9s;
+}
+.container div:nth-child(14){
+    left: 80%;
+    animation: animasi 24s linear infinite -2.9s;
+}
+.container div:nth-child(15){
+    left: 58%;
+    animation: animasi 32s linear infinite -3.5s;
+}
+@keyframes animasi{
+    0%{
+        transform: translateY(0vh) translateX(0vw) rotate(0);
+        opacity:1;
+    }
+    50%{
+        transform: translateY(100vh) translateX(0.3vw) rotate(180deg);
+    }
+    100%{
+        transform: translateY(200vh) translateX(-0.4vw) rotate(360deg);
+        opacity:0.6;
+    }
+}
